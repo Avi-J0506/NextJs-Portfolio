@@ -1,77 +1,46 @@
-import React from 'react'
-import { FaYoutube } from 'react-icons/fa';
-import {
-    RxDiscordLogo,
-    RxGithubLogo,
-    RxInstagramLogo,
-    RxTwitterLogo,
-    RxLinkedinLogo,
-  } from "react-icons/rx";
+import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className='w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]'>
-      <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-
-            <div className='min-w-[200px] h-auto flex - flex-col justify-start'>
-                <div className='font-bold text-16px'>
-                    Community
-                </div>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <FaYoutube/>
-                    <span className='text-[15px] ml-6px'>Youtube</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <RxGithubLogo/>
-                    <span className='text-[15px] ml-6px'>Github</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <RxDiscordLogo/>
-                    <span className='text-[15px] ml-6px'>Discord</span>
-                </p>
-            </div>
-
-            <div className='min-w-[200px] h-auto flex - flex-col justify-start'>
-                <div className='font-bold text-16px'>
-                    Social Media
-                </div>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <RxInstagramLogo/>
-                    <span className='text-[15px] ml-6px'>Instagram</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <RxTwitterLogo/>
-                    <span className='text-[15px] ml-6px'>Twitter</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <RxLinkedinLogo/>
-                    <span className='text-[15px] ml-6px'>LinkedIn</span>
-                </p>
-            </div>
-
-            <div className='min-w-[200px] h-auto flex - flex-col justify-start'>
-                <div className='font-bold text-16px'>
-                    About
-                </div>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <span className='text-[15px] ml-6px'>Give Projects</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <span className='text-[15px] ml-6px'>Know more about me</span>
-                </p>
-                <p className='flex flex-row items-center my-[15px] cursor-pointer'>
-                    <span className='text-[15px] ml-6px'>jhaabhinandan55@gmail.com</span>
-                </p>
-            </div>
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 justify-center items-center">
+        <div className="md:flex justify-center items-center">
+          <div className="mb-6 md:mb-0 justify-center items-center">
+            <Link
+              href={'https://www.linkedin.com/in/abhinandan-jha-4477a9231'}
+              className="flex items-center justify-center"
+            >
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                Abhinandan Jha
+              </span>
+            </Link>
+            <p className="text-gray-300 mt-2">
+              Hello! I'm Abhinandan Jha, a passionate third-year computer
+              science student at SRM University Chennai. With a strong
+              foundation in full-stack web development, I am deeply intrigued by
+              the realms of Artificial Intelligence and Machine Learning. My
+              goal is to be a problem solver in the ever-evolving world of
+              technology, leveraging my skills to create innovative solutions.
+              Excited about the endless possibilities at the intersection of
+              code and creativity, I am committed to continuous learning and
+              contributing meaningfully to the tech community.
+            </p>
+          </div>
         </div>
-
-        <div className="mb-[20px] text-[15px] text-center ">
-            &copy; Abhinandan Jha 2024 Inc. All Rights Reserved
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2024{" "}
+            <a href="https://flowbite.com/" className="hover:underline">
+              Abhinandan™
+            </a>
+            . All Rights Reserved.
+          </span>
         </div>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

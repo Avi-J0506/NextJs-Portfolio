@@ -12,9 +12,11 @@
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.17.12",
     "next": "14.0.4",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "remixicon-react": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

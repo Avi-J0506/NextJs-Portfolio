@@ -59,12 +59,12 @@ export const Skill_data = [
       width: 80,
       height: 80,
     },
-    {
-      skill_name: "Stripe Payment",
-      Image: "/stripe.webp",
-      width: 80,
-      height: 80,
-    },
+    // {
+    //   skill_name: "Stripe Payment",
+    //   Image: "/stripe.webp",
+    //   width: 80,
+    //   height: 80,
+    // },
     {
       skill_name: "Node js",
       Image: "/node-js.png",
@@ -79,24 +79,7 @@ export const Skill_data = [
     },
   
   ];
-  
-  export const Socials = [
-    {
-      name: "Discord",
-      src: "/instagram.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/discord.svg",
-    },
-  ];
-  
-  
-  
+
   export const Frontend_skill = [
     {
       skill_name: "Html 5",
@@ -186,28 +169,10 @@ export const Skill_data = [
       height: 55,
     },
     {
-      skill_name: "Postger SQL",
-      Image: "/postger.png",
-      width: 70,
-      height: 70,
-    },
-    {
       skill_name: "My SQL",
       Image: "/mysql.png",
       width: 70,
       height: 70,
-    },
-    {
-      skill_name: "Prisma",
-      Image: "/prisma.webp",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
-      width: 80,
-      height: 80,
     },
   ];
   
@@ -215,12 +180,6 @@ export const Skill_data = [
     {
       skill_name: "React Native",
       Image: "/ReactNative .png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Tauri",
-      Image: "/tauri.svg",
       width: 70,
       height: 70,
     },
@@ -237,19 +196,27 @@ export const Skill_data = [
       width: 50,
       height: 50,
     },
-  
   ];
-  
-  
-  
-  export const Other_skill = [
+  export const Other_Skill = [
     {
-      skill_name: "Go",
-      Image: "/go.png",
-      width: 60,
-      height: 60,
+      skill_name: "Java",
+      Image: "/java.png",
+      width: 70,
+      height: 70,
     },
-  ];
+    {
+      skill_name: "Python",
+      Image: "/Python.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Machine Learning",
+      Image: "/machine-learning.webp",
+      width: 50,
+      height: 50,
+    },
+  ]
   
   
   

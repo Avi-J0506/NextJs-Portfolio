@@ -1,12 +1,12 @@
 import React from "react";
-import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from "../constants";
+import { Backend_skill, Frontend_skill, Full_stack, Other_Skill, Skill_data } from "../constants";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
 const Skills = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-60 py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-60 py-10"
       style={{ transform: "scale(0.9)" }}
     >
       <SkillText/>
@@ -57,8 +57,9 @@ const Skills = () => {
             />
         ))}
       </div>
+
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Other_skill.map((image, index) => (
+        {Other_Skill.map((image, index) => (
             <SkillDataProvider
             key={index}
             src={image.Image}
@@ -78,7 +79,7 @@ const Skills = () => {
                 loop
                 muted 
                 autoPlay
-                src="/cards-video.webm"
+                src="/skillsbg.mov"
                 />
             </div>
       </div>
